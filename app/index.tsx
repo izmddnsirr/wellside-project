@@ -1,12 +1,13 @@
-import { useEffect } from "react";
-import { View, Text, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import { useEffect } from "react";
+import { ActivityIndicator, Text, View } from "react-native";
 
 export default function SplashScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
       // Buat masa ni terus pergi ke tabs
-      router.replace("/(tabs)");
+      router.replace("/(auth)/login");
       // Kalau nanti nak check login:
       // kalau tak login -> router.replace("/(auth)/login");
     }, 1500);
@@ -23,11 +24,12 @@ export default function SplashScreen() {
         gap: 12,
       }}
     >
-      <Text style={{ fontSize: 24, fontWeight: "bold" }}>
-        Wellside Barbershop
+      <StatusBar style="auto" />
+
+      <Text style={{ fontSize: 30, fontWeight: "bold", paddingBottom: 50 }}>
+        WELLSIDE
       </Text>
       <ActivityIndicator size="large" />
-      <Text>Loading...</Text>
     </View>
   );
 }
