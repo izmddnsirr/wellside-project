@@ -10,6 +10,7 @@ import { Platform } from "react-native";
 export default function TabLayout() {
   return (
     <NativeTabs>
+      {/* Home */}
       <NativeTabs.Trigger name="index">
         {Platform.OS === "android" ? (
           <Icon src={<VectorIcon family={MaterialIcons} name="home" />} />
@@ -19,6 +20,7 @@ export default function TabLayout() {
         <Label>Home</Label>
       </NativeTabs.Trigger>
 
+      {/* Appointment */}
       <NativeTabs.Trigger name="appointment">
         {Platform.OS === "android" ? (
           <Icon
@@ -30,6 +32,7 @@ export default function TabLayout() {
         <Label>Appointment</Label>
       </NativeTabs.Trigger>
 
+      {/* Notification */}
       <NativeTabs.Trigger name="notification">
         {Platform.OS === "android" ? (
           <Icon
@@ -41,6 +44,7 @@ export default function TabLayout() {
         <Label>Notification</Label>
       </NativeTabs.Trigger>
 
+      {/* Profile */}
       <NativeTabs.Trigger name="profile">
         {Platform.OS === "android" ? (
           <Icon src={<VectorIcon family={MaterialIcons} name="person" />} />
