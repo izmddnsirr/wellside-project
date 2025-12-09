@@ -39,7 +39,7 @@ export default function LoginScreen() {
             {/*  */}
             <View>
               <Text className="text-4xl font-semibold mb-2">Welcome back.</Text>
-              <Text className="mb-6 text-gray-600">Your personal barber.</Text>
+              <Text className="mb-6 text-gray-600">Sign in with phone number or Google</Text>
             </View>
 
             {/* Email */}
