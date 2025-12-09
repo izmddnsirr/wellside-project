@@ -56,7 +56,7 @@ export default function RegisterScreen() {
               FULL NAME
             </Text>
             <TextInput
-              className="bg-gray-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
+              className="bg-slate-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
               placeholder="Enter your full name"
               autoCapitalize="words"
               value={name}
@@ -68,7 +68,7 @@ export default function RegisterScreen() {
               EMAIL
             </Text>
             <TextInput
-              className="bg-gray-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
+              className="bg-slate-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
               placeholder="Enter your email"
               keyboardType="email-address"
               autoCapitalize="none"
@@ -76,12 +76,12 @@ export default function RegisterScreen() {
               onChangeText={setEmail}
             />
 
-            {/* PHONE NUMBER –– ADDED FIELD */}
+            {/* PHONE NUMBER */}
             <Text className="text-sm font-semibold text-gray-700 mb-3 tracking-widest">
               PHONE NUMBER
             </Text>
             <TextInput
-              className="bg-gray-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
+              className="bg-slate-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
               placeholder="Enter your phone number"
               keyboardType="phone-pad"
               autoCapitalize="none"
@@ -94,7 +94,7 @@ export default function RegisterScreen() {
               PASSWORD
             </Text>
             <TextInput
-              className="bg-gray-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
+              className="bg-slate-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
               placeholder="Enter your password"
               secureTextEntry
               autoCapitalize="none"
@@ -107,7 +107,7 @@ export default function RegisterScreen() {
               CONFIRM PASSWORD
             </Text>
             <TextInput
-              className="bg-gray-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
+              className="bg-slate-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
               placeholder="Confirm your password"
               secureTextEntry
               autoCapitalize="none"

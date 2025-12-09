@@ -1,18 +1,23 @@
-import { Button, Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function AppointmentScreen() {
   return (
-    <SafeAreaView className="flex-1 p-6">
-      <Text className="text-[22px] font-semibold">Make an Appointment</Text>
-
-      <View className="mt-4">
-        <Button title="Select Service" onPress={() => {}} />
-      </View>
-
-      <View className="mt-3">
-        <Button title="Choose Barber" onPress={() => {}} />
-      </View>
+    <SafeAreaView className="flex-1 bg-slate-100">
+      <ScrollView showsVerticalScrollIndicator={false}>
+        {/* Greeting Section */}
+        <View className="mx-5 mt-6 flex-row justify-between items-center">
+          <View>
+            <Text className="text-sm text-gray-600">W E L L S I D E + </Text>
+            <Text className="text-3xl mt-1 font-semibold">
+              Appointment
+            </Text>
+            <Text className="text-gray-500 text-lg">
+              Choose your chair now
+            </Text>
+          </View>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }

@@ -3,13 +3,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView className="flex-1 bg-gray-100">
+    <SafeAreaView className="flex-1 bg-slate-100">
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Greeting Section */}
         <View className="mx-5 mt-6 flex-row justify-between items-center">
           <View>
             <Text className="text-sm text-gray-600">W E L L S I D E + </Text>
-            <Text className="text-4xl mt-1 font-semibold">
+            <Text className="text-3xl mt-1 font-semibold">
               Hello, Izamuddin
             </Text>
             <Text className="text-gray-500 text-lg">
@@ -19,7 +19,7 @@ export default function HomeScreen() {
         </View>
 
         {/* Card */}
-        <View className="bg-black border mx-5 mt-7 rounded-3xl p-5">
+        <View className="bg-slate-950 border mx-5 mt-7 rounded-3xl p-5">
           <Text className="text-neutral-400 text-sm tracking-tighter">
             T O D A Y
           </Text>
