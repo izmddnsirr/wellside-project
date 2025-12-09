@@ -18,7 +18,7 @@ export default function LoginScreen() {
   const [password, setPassword] = useState("");
 
   return (
-    <SafeAreaView className="flex-1 px-5 bg-gray-100">
+    <SafeAreaView className="flex-1 px-5 bg-slate-100">
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -47,7 +47,7 @@ export default function LoginScreen() {
               EMAIL
             </Text>
             <TextInput
-              className="bg-gray-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
+              className="bg-slate-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
               placeholder="Enter your email"
               keyboardType="email-address"
               autoCapitalize="none"
@@ -61,7 +61,7 @@ export default function LoginScreen() {
               PASSWORD
             </Text>
             <TextInput
-              className="bg-gray-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
+              className="bg-slate-50 border border-gray-300 rounded-xl p-5 text-base leading-5 mb-6"
               placeholder="Enter your password"
               keyboardType="default"
               secureTextEntry
@@ -94,7 +94,6 @@ export default function LoginScreen() {
           </View>
         </ScrollView>
       </KeyboardAvoidingView>
-      {/* END WRAPPER */}
     </SafeAreaView>
   );
 }
